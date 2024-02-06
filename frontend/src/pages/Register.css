@@ -1,0 +1,61 @@
+.app__register-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 5rem 30rem;
+    padding: 5rem 5rem;
+
+    border: 1px solid black;
+}
+
+.app__register-box_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__register-box_inputs input{
+    margin: 0.5rem;
+    width: 250px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.app__register-box_button {
+    background-color: aqua;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 14px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.app__register-box_button:hover {
+    transition: 0.2s;
+    background-color: black;
+    color: aqua;
+    padding: 0.5rem 1.7rem;
+}
+
+.app__register-form_error {
+    color: red;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.app__register-form_password-list {
+    margin: 10px 0 0 4.5rem;
+    text-align: left;
+    list-style-position: inside;
+}

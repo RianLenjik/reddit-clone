@@ -1,0 +1,35 @@
+.app__landing_page-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    margin: 10rem 30rem;
+    padding: 3rem 3rem;
+    text-align: justify;
+    font-size: 14pt;
+    line-height: 1.5;
+}
+
+.app__landing_page-box_button {
+    background-color: aqua;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.app__landing_page-box_button:hover {
+    transition: 0.2s;
+    background-color: black;
+    color: aqua;
+    padding: 0.5rem 1.7rem;
+}
