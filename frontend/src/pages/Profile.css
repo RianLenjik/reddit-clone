@@ -1,0 +1,74 @@
+.app__profile-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 150px;
+    color: #252A34;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.app__profile-main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.app__profile-box_text {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.app__profile-main_general {
+    display: flex;
+    gap: 25px;
+    padding-top: 2rem;
+}
+.app__profile-main_image {
+    width: 55px;
+    padding-left: 15px;
+}
+
+.app__profile-main_name {
+    margin-bottom: 0;
+}
+
+.app__profile-main_email {
+    margin-top: 0;
+    color: rgb( 0 0 0 / 0.3);
+}
+
+.app__profile-date_joined {
+    margin-top: 4rem;
+}
+
+.app__profile-icons {
+    margin-left: 100px;
+    margin-top: 2rem;
+}
+
+.app__profile-icons_edit {
+    width: 30px;
+    margin-right: 20px;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+
+.app__profile-icons_edit:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 7px;
+    transition: 0.2s;
+}
+
+.app__profile-icons_delete {
+    width: 30px;
+    padding: 6px;
+    margin-left: 2px;
+}
+
+.app__profile-icons_delete:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 7px;
+    transition: 0.2s;
+}

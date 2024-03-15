@@ -94,6 +94,14 @@ const authenticateToken = (req: RequestWithUser, res: Response, next: NextFuncti
   });
 };
 
+// Define a route that simply checks if the token is valid
+app.get('/api/verifyToken', authenticateToken, (req: RequestWithUser, res: Response) => {
+  // If this route is reached, it means the token is valid
+  // You can return a simple success message or user details
+  res.json({ success: true, user: req.user });
+});
+
+
 app.get('/profile', authenticateToken, async (req: RequestWithUser, res: Response) => {
   // Check if the user object exists in the request
   if (!req.user) return res.status(401).json({ error: 'Unauthorized' });
@@ -112,15 +120,12 @@ app.get('/profile', authenticateToken, async (req: RequestWithUser, res: Respons
     }
 
     // Respond with the user's name
-    return res.json({ name: user.name });
+    return res.json({ name: user.name, email: user.email, date: user.date_joined });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: 'Something went wrong' });
   }
 });
-
-
-
 
 const PORT = 8081;
 app.listen(PORT, () => {
